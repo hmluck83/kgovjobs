@@ -39,7 +39,7 @@ func (e *Element) String() string {
 }
 
 func (e *Element) HTMLString() string {
-	return "<a href=\"" + e.postURL + "\">" + e.posting + "</a>\n" + e.organization + "\n" + e.postDate.Format(time.DateOnly) + " " + e.deadLine.Format(time.DateOnly) + "\n"
+	return "<a href=\"" + e.postURL + "\">" + e.posting + "</a>\n" + e.organization + "\n" + "\n\n"
 }
 
 func (e *Element) BeforeDay(n time.Time) bool {
